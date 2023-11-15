@@ -1,0 +1,3429 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Tugas PTA UTM UTS &#8212; Tugas Web Statis</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=365ca57ee442770a23c6" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=365ca57ee442770a23c6"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '190411100088_Muhammad_Razzaaq_UTS_PPW';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Membuat Graph &amp; Rank Kalimat" href="190411100088_Muhammad_Razzaaq_Tugas_Graph_Rank_Kalimat_PPW.html" />
+    <link rel="prev" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="Tugas Web Statis - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Tugas Web Statis - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas PTA UTM UTS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="190411100088_Muhammad_Razzaaq_Tugas_Graph_Rank_Kalimat_PPW.html">Membuat Graph &amp; Rank Kalimat</a></li>
+
+
+
+
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/Razzaaq38/ppw/blob/master/_sources/190411100088_Muhammad_Razzaaq_UTS_PPW.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onColab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Razzaaq38/ppw" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Razzaaq38/ppw/issues/new?title=Issue%20on%20page%20%2F190411100088_Muhammad_Razzaaq_UTS_PPW.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/190411100088_Muhammad_Razzaaq_UTS_PPW.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Tugas PTA UTM UTS</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="tugas-pta-utm-uts">
+<h1>Tugas PTA UTM UTS<a class="headerlink" href="#tugas-pta-utm-uts" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>nltk
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>Sastrawi
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>gensim
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: nltk in /usr/local/lib/python3.10/dist-packages (3.8.1)
+Requirement already satisfied: click in /usr/local/lib/python3.10/dist-packages (from nltk) (8.1.7)
+Requirement already satisfied: joblib in /usr/local/lib/python3.10/dist-packages (from nltk) (1.3.2)
+Requirement already satisfied: regex&gt;=2021.8.3 in /usr/local/lib/python3.10/dist-packages (from nltk) (2023.6.3)
+Requirement already satisfied: tqdm in /usr/local/lib/python3.10/dist-packages (from nltk) (4.66.1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: Sastrawi in /usr/local/lib/python3.10/dist-packages (1.0.1)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: gensim in /usr/local/lib/python3.10/dist-packages (4.3.2)
+Requirement already satisfied: numpy&gt;=1.18.5 in /usr/local/lib/python3.10/dist-packages (from gensim) (1.23.5)
+Requirement already satisfied: scipy&gt;=1.7.0 in /usr/local/lib/python3.10/dist-packages (from gensim) (1.11.3)
+Requirement already satisfied: smart-open&gt;=1.8.1 in /usr/local/lib/python3.10/dist-packages (from gensim) (6.4.0)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span><span class="p">,</span> <span class="n">CountVectorizer</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">LatentDirichletAllocation</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to /root/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to /root/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://pta.trunojoyo.ac.id/c_search/byprod/7/&#39;</span>
+<span class="k">for</span> <span class="n">page</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">207</span><span class="p">):</span>
+    <span class="c1"># Mengambil data dari halaman web dengan web scraping</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">page</span><span class="p">))</span>
+    <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+    <span class="n">items</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;data-cat&#39;</span><span class="p">:</span> <span class="s1">&#39;#luxury&#39;</span><span class="p">})</span>
+
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+        <span class="c1"># Mengambil informasi judul, penulis, dosen pembimbing, dan abstrak dari halaman tesis</span>
+        <span class="c1"># dan menyimpannya dalam data list</span>
+        <span class="n">link</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;gray button&#39;</span><span class="p">)[</span><span class="s1">&#39;href&#39;</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+
+        <span class="n">req2</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+        <span class="n">soup2</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req2</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+
+        <span class="n">penulis_elem</span> <span class="o">=</span> <span class="n">soup2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;style&#39;</span><span class="p">:</span> <span class="s1">&#39;padding:2px 2px 2px 2px;&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">)</span>
+        <span class="n">penulis</span> <span class="o">=</span> <span class="n">penulis_elem</span><span class="o">.</span><span class="n">text</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">penulis</span><span class="p">)</span>
+
+        <span class="n">dospem_elem</span> <span class="o">=</span> <span class="n">soup2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;style&#39;</span><span class="p">:</span> <span class="s1">&#39;float:left; width:540px;&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">findAll</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;style&#39;</span><span class="p">:</span> <span class="s1">&#39;padding:2px 2px 2px 2px;&#39;</span><span class="p">})</span>
+
+        <span class="n">dospem_i</span> <span class="o">=</span> <span class="s1">&#39;Dosen Pembimbing I tidak ditemukan&#39;</span>
+        <span class="n">dospem_ii</span> <span class="o">=</span> <span class="s1">&#39;Dosen Pembimbing II tidak ditemukan&#39;</span>
+
+        <span class="k">for</span> <span class="n">dospem</span> <span class="ow">in</span> <span class="n">dospem_elem</span><span class="p">:</span>
+            <span class="n">dospem_text</span> <span class="o">=</span> <span class="n">dospem</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+            <span class="k">if</span> <span class="s1">&#39;Dosen Pembimbing I :&#39;</span> <span class="ow">in</span> <span class="n">dospem_text</span><span class="p">:</span>
+                <span class="n">dospem_i</span> <span class="o">=</span> <span class="n">dospem_text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Dosen Pembimbing I :&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+            <span class="k">elif</span> <span class="s1">&#39;Dosen Pembimbing II :&#39;</span> <span class="ow">in</span> <span class="n">dospem_text</span><span class="p">:</span>
+                <span class="n">dospem_ii</span> <span class="o">=</span> <span class="n">dospem_text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Dosen Pembimbing II :&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dosen Pembimbing I :&quot;</span><span class="p">,</span> <span class="n">dospem_i</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Dosen Pembimbing II :&quot;</span><span class="p">,</span> <span class="n">dospem_ii</span><span class="p">)</span>
+
+        <span class="n">judul_elem</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">)</span>
+        <span class="n">judul</span> <span class="o">=</span> <span class="n">judul_elem</span><span class="o">.</span><span class="n">text</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">judul</span><span class="p">)</span>
+
+        <span class="n">absk_elem</span> <span class="o">=</span> <span class="n">soup2</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;div&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;style&#39;</span><span class="p">:</span> <span class="s1">&#39;margin: 15px 15px 15px 15px;&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;p&#39;</span><span class="p">)</span>
+        <span class="n">absk</span> <span class="o">=</span> <span class="n">absk_elem</span><span class="o">.</span><span class="n">text</span> <span class="k">if</span> <span class="n">absk_elem</span> <span class="k">else</span> <span class="s1">&#39;Abstrak tidak ditemukan&#39;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">absk</span><span class="p">)</span>
+
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">judul</span><span class="p">,</span> <span class="n">penulis</span><span class="p">,</span> <span class="n">dospem_i</span><span class="p">,</span> <span class="n">dospem_ii</span><span class="p">,</span> <span class="n">absk</span><span class="p">])</span>
+
+<span class="n">pta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Judul&#39;</span><span class="p">,</span> <span class="s1">&#39;penulis&#39;</span><span class="p">,</span> <span class="s1">&#39;Dosen Pembimbing I&#39;</span><span class="p">,</span> <span class="s1">&#39;Dosen Pembimbing II&#39;</span><span class="p">,</span> <span class="s1">&#39;Abstrak&#39;</span><span class="p">])</span>
+<span class="n">pta</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://pta.trunojoyo.ac.id/welcome/detail/080211100070
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : SATIYAH
+Dosen Pembimbing I : Dra. Hj. S. Anugrahini Irawati, MM 
+Dosen Pembimbing II : Helmi Buyung Aulia,S,ST.SE,M.MT
+PENGARUH FAKTOR-FAKTOR PELATIHAN DAN PENGEMBANGAN TERHADAP PRODUKTIVITAS KERJA DINAS KELAUTAN DAN PERIKANAN KABUPATEN BANGKALAN
+                                    ABSTRAK
+Satiyah, Pengaruh Faktor-faktor Pelatihan dan Pengembangan Terhadap Produktivitas Kerja Dinas Kelautan dan Perikanan Bangkalan. Dibawah bimbingan Dra.Hj.S.Anugrahini Irawati,MM dan  Helmi Buyung Aulia,S,ST.SE,M.MT
+Dalam upaya meningkatkan produktivitas kerja tidaklah mudah, oleh karena itu salah satu usaha agar produktivitas meningkat adalah menerapkan program pelatihan dan pengembangan sumber daya manusia (SDM) perlu dilaksanakan dalam instansi agar produktivitas yang tinggi dapat tercapai dengan meningkat kemampuan pegawai agar dapat bekerja secara efektif dan efisien. Dengan adanya pelatihan dan pengembnagan diharapkan pegawai juga mampu menyesuaikan diri dengan kebutuhan-kebutuhan baru atas sikap, tingkah laku keterampilan dan pengetahuan sesuai dengan tuntutan perubahan. Dengan adanya pelatihan dan pengembangan pegawai yang baik dapat mendukung terciptanya suasana kerja yang kondusif dalam instansi, sehingga dengan sendirinya produktivitasi kerja akan meningkat.
+Tujuan penelitian ini adalah untuk mengetahui seberapa besar Pengaruh Faktor-faktor Pelatihan dan Pengembangan Terhadap Produktivitas Kerja Dinas Kelautan dan Perikanan Bangkalan. Untuk mengukur dan menganalisa hubungan antara kedua variabel di atas, peneliti menggunakan pendekatan observasional analitik, yaitu melakukan pengamatan secara langsung kepada responden dengan penyebaran kuisioner untuk dianalisis. Penelitian ini merupakan penelitian populasi dengan 30 responden sebagai sampel serta diolah dengan SPSS Versi 13.00 dan dianalisis dengan menggunakan metode statistik, yaitu metode non probality sampling secara simple random sampling.
+Kesimpulan penelitian ini adalah (1a). Faktor-faktor pelatihan dan pengembangan yang terdiri dari, perbedaan individu pegawai (X1), hubungan dengan analisis jabatan (X2), motivasi (X3), partisipasi aktif (X4), seleksi peserta (X5), seleksi  instruktur (X6) dan metode pelatihan dan pengembangan (X7) mempunyai pengaruh simultan terhadap produktivitas kerja pegawai Dinas Kelautan dan Perikanan Kabupaten Bangkalan. Terbukti dengan nilai koefisien determinasi berganda (R2) atau R square = 0,751, Fhitung 9,500 lebih besar dari Ftabel 2,37. (1b) Faktor hubungan dengan analisis jabatan tidak berpengaruh secara parsial terhadap produktivitas kerja pegawai Dinas Kelautan dan Perikanan Kabupaten Bangkalan. (2) Pengujian Hipotesis kedua menunjukkan bahwa variabel motivasi (X3) tidak terbukti, karena dilihat dari nilai thitung Sebesar 6,442 menunjukkan bahwa seleksi peserta (X5) yang mempunyai pengaruh (dominan) terhadap produktivitas kerja pegawai pada instansi Dinas Kelautan dan Perikanan Bangkalan. 
+
+Kata kunci : Dinas Kelautan dan Perikanan, Faktor-faktor Pelatihan dan Pengembangan,  Produktivitas Kerja.
+
+https://pta.trunojoyo.ac.id/welcome/detail/090211200001
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Faishal
+Dosen Pembimbing I : Nurita Andriani 
+Dosen Pembimbing II : Yustina Chrismardani
+ANALISIS PERSEPSI BRAND ASSOCIATION MENURUT PELANGGAN PAKAIAN KIDDROCK (STUDI PADA DISTRO CRANBERRIES PAMEKASAN)
+Tujuan penelitian ini adalah untuk mengetahui persepsi brand association menurut pelanggan pakaian Kiddrock (studi pada distro Cranberries Pamekasan). Penelitian ini menggunakan metode deskriptif, dengan  metode survei.
+Populasi penelitian ini adalah pelanggan pakaian Kiddrock di distro Cranberries dan Sampel dalam penelitian ini adalah 70 orang responden di distro Cranberries pada bulan Desember 2012. Metode pengambilan sampel yang digunakan adalah sampling aksidental. Metode pengumpulan data dengan cara penelitian lapangan (field research) dengan membagikan kuesioner dan riset perpustakaan data. Teknik pengolahan data yang digunakan ialah pengolaha data dengan bantuan perangkat lunak SPSS versi 16 (uji validitas dan uji reabilitas) dan menggunakan skala likert.
+Persepsi konsumen terhadap brand association terdiri dari beberapa dimensi, yaitu: dimensi jaminan, dimensi identifikasi pribadi, dimensi identifikasi sosial, dimensi status, dimensi kesediaan menerima perluasan merek, dan dimensi kesediaan untuk merekomendasikan merek. Hasil analisis menunjukan bahwa persepsi brand association menurut pelanggan pakaian Kiddrock di distro Cranberriess lebih di apresisasikan pada dimensi jaminan.
+
+Kata kunci : Brand Association, Presepsi, Kiddrock, Cranberries.
+https://pta.trunojoyo.ac.id/welcome/detail/080211100050
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Wahyu Kurniawan
+Dosen Pembimbing I : Dr. Dra. Hj. Iriani Ismail, MM 
+Dosen Pembimbing II : Dra. Hj. S. Anugrahini Irawati, MM
+PENGARUH GAYA KEPEMIMPINAN DEMOKRATIK TERHADAP DISIPLIN KERJA PEGAWAI DI KANTOR KEC. PUCUK KAB. LAMONGAN JAWA TIMUR
+
+https://pta.trunojoyo.ac.id/welcome/detail/100211200002
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Muhammad Zakaria Utomo
+Dosen Pembimbing I : Dr. Ir. Nurita Andriani, MM 
+Dosen Pembimbing II : Nirma Kurriwati, SP, M.Si
+Pengukuran Website Quality Pada Situs Sistem Akademik Online Menggunakan Analisis Tingkat Kepentingan - Kinerja (Studi Pada Portal Akademik UTM)
+Aplikasi nyata pemanfaatan teknologi informasi dan komunikasi adalah pada bidang layanan administrasi akademik perguruan tinggi, salah satunya sistem portal akademik Universitas Trunojoyo Madura. Implementasi dalam proses penyelenggaraannya sering menemui banyak kendala, baik teknis maupun non teknis. Penelitian ini bertujuan untuk mengetahui kepuasan pelanggan berdasarkan analisis indeks kepuasan pelanggan ditinjau dari Webqual 4.0 dan untuk mengetahui fokus perbaikan mutu terhadap pelayanan website portal akademik Universitas Trunjoyo Madura berdasarkan Importance Performance Analysis ditinjau dari Webqual 4.0.
+	Penelitian ini merupakan penelitian kuantitaif deskriptif, digunakan untuk mengetahui gambaran, deskripsi, atau lukisan secara sistematis, faktual dan akurat mengenai kualitas pelayanan jasa online yang diberikan kepada mahasiswa.Sampelpenelitianiniadalahmahasiswaangkatan 2009/2010, teknik sampel yang digunakan teknik Stratified Random Sampling dengan alat analisis Indeks Kepuasan Pelanggan dan analisis Tingkat Kepentingan â Kinerja. Hasil penelitian didapat skor Indeks Kepuasan Pelanggan (IKP) sebesar 60.42% dan masuk dalam kategori âcukup puasâ, sedangkan Diagram  Kartesius Importance Performance menunjukkan bahwa terdapat  tiga atribut yang menjadi prioritas utama perbaikan mutu yakni Situs portal akademik Universitas Trunojoyo Madura memberikan informasi administrasi dan akademik mahasiswa yang jelas,detail dan ter update (KI 4), Informasi administrasi dan akademik disitus portal akademik UTM dapat dipercaya  (KI 3), Melalui portal UTM, pengguna merasa aman bahwa data akademik mahasiswa (KRS, KHS, Transkrip, data personal) sesuai (KIP 4).
+Kata kunci : website, importance performance, webqual, indeks kepuasan pelanggan.
+
+https://pta.trunojoyo.ac.id/welcome/detail/080211100044
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Hendri Wahyudi Prayitno
+Dosen Pembimbing I : Dra. Hj. S Anugrahini Irawati, MM 
+Dosen Pembimbing II : Helmi Buyung Aulia,S,ST,SE,.MT
+PENGARUH KEPEMIMPINAN DAN KOMPENSASI TERHADAP KINERJA PEGAWAI DINAS PENDIDIKAN KABUPATEN SAMPANG
+Abstrak
+Penelitian ini menggunakan metode kuantitatif, yang menekankan pada pengujian hipotesis. Variabel yang digunakan pada penelitian ini adalah kepemimpinan(X1), kompensasi (X2). Penelitian ini dilaksanakan di Kantor Dinas Pendidikan Kabupaten Sampang dan sampel yang digunakan adalah sebanyak 50 orang yang terdiri dari pegawai negeri sipil dan non PNS. 
+Hipotesis pertama menjelaskan bahwa variabel bebas secara bersamaâsama mempunyai hubungan yang signifikan secara simultan antara kepemimpinan (X1) dan kompensasi (X2) terhadap kinerja pegawai (Y), hal ini terbukti dengan nilai Fhitung pada tingkat ? = 5% sebesar 11,645 dengan nilai R2 sebesar 0,311. 
+Hipotesis kedua menjelaskan bahwa variabel kompensasi sebagai variabel yang mempunyai pengaruh dominan, hal ini terbukti dengan nilai t hitung 3,072 ini berarti bahwa terdapat pengaruh positif dan signifikan secara parsial antara variabel bebas (X2) terhadap variabel terikat (Y). 
+Kesimpulan penelitian ini adalah pengujian hipotesis pertama menunjukkan bahwa berdasarkan pengujian statistik secara simultan, variabel  bebas memiliki pengaruh yang signifikan terhadap variabel terikat. Pengujian hipotesis kedua membuktikan bahwa variabel kompensasi (X2) merupakan variabel yang berpengaruh dominan terhadap kinerja pada pegawai Dinas Pendidikan Kabupaten Sampang. 
+Kata kunci : Kepemimpinan, Kompensasi, Kinerja
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://pta.trunojoyo.ac.id/welcome/detail/080211100119
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Aththaariq
+Dosen Pembimbing I : Dr.RM Moch Wispandono,.S.E,.MS 
+Dosen Pembimbing II : Dr. Muhammad Alkirom Wildan,S.E.,M.Si.
+PENGARUH KOMPETENSI DOSEN TERHADAP KINERJA DOSEN DI UNIVERSITAS TRUNOJOYO MADURA
+Abstrak
+
+Aththaariq, Pengaruh Kompetensi Dosen Terhadap Kinerja Dosen Di Universitas Trunojoyo Madura. Dibawah bimbingan Dr.RM Moch Wispandono,.S.E,.MS dan Dr. Muhammad Alkirom Wildan,S.E.,M.Si.
+Penelitian ini bertujuan untuk menganalisis pengaruh kompetensi pedagogik (X1), kompetensi profesional (X2), kompetensi sosial (X3), dan kompetensi kepribadian (X4), terhadap variabel terikat kinerja dosen di Universitas Trunojoyo Madura.
+Data yang digunakan dalam penelitian ini adalah data primer, data tersebut diperoleh dari hasil penyebaran kuesioner,  sedangkan yang menjadi responden dalam penelitian ini adalah dosen di Universitas Trunojoyo Madura yang sudah tersertifikasi aktif mulai dari tahun 2008-2011 berjumlah 78 dosen, teknik pengambilan sampel menggunakan judgmental sampling dengan menggunakan metode analisis regresi linier berganda.
+Dari hasil penelitian yang telah dilakukan berdasarkan hasil analisis dapat disimpulkan bahwa kompetensi pedagogik (X1), kompetensi profesional (X2), kompetensi sosial (X3), dan kompetensi kepribadian (X4), berpengaruh secara signifikan terhadap variabel terikat kinerja dosen (Y) baik secara simultan maupun parsial. Pada nilai koefisiensi determinasi berganda (R2) menunjukkan nilai sebesar 0.796 yang artinya 79.6% kinerja dosen dipengaruhi oleh perubahan semua variabel bebas yang telah diteliti dan sisanya 20.4% dipengaruhi oleh variabel yang tidak diteliti. Sedangkan variabel yang memiliki pengaruh dominan adalah variabel kompetensi pedagogik dengan nilai signifikansi sebesar 0.000 dan memiliki nilai beta  sebesar 0.426. 
+
+Kata kunci: Kompetensi pedagogik, kompetensi profesional, kompetensi sosial, kompetensi kepribadian,dan kinerja dosen.
+
+
+https://pta.trunojoyo.ac.id/welcome/detail/080211100103
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Haryono Arifin
+Dosen Pembimbing I : Dr. Ir Nurita Andriani, MM 
+Dosen Pembimbing II : Nirma Kurriwati, S.P., M.Si
+PENGARUH PERILAKU KONSUMEN TERHADAP KEPUTUSAN PEMBELIAN PRODUK HONDA MEREK VARIO
+(Study Pada Dealer Surya Agung Motor Bangkalan)
+
+
+ABSTRAK
+Haryono Arifin, Pengaruh Perilaku Konsumen Terhadap Keputusan Pembelian Produk Honda Merek Vario 
+(Studi Pada Dealler Surya Agung Motor Bangkalan).
+
+Tujuan penelitian ini adalah untuk : (1) mengetahui seberapa besar pengaruh perilaku konsumen terhadap keputusan pembelian Honda Merek Vario di Dealer Surya Agung Motor Bangkalan (2) Untuk mengetahui variabel manakah diantara perilaku konsumen yang terdiri dari kebudayaan, sosial, pribadi dan psikologis yang dominan dalam keputusan pembelian konsumen terhadap Honda Merek Vario. Penelitian ini menggunakan pendekatan kuantitatif, yaitu melakukan pengamatan secara langsung kepada responden dengan penyebaran kuesioner untuk dianalisa dan penelitian ini merupakan penelitian yang menggunakan populasi sebanyak 50 responden, konsumen yang melakukan pembelian Honda Merek Vario di Dealer Surya Agung Motor Bangkalan yang dijadikan responden serta dianalisis dengan SPSS Versi 16.00
+Kesimpulan penelitian ini adalah (1) Pengujian hipotesis pertama menunjukkan bahwa variabel perilaku konsumen (kebudayaan, sosial, pribadi dan psikologis) berpengaruh secara simultan terhadap keputusan pembelian Honda merek Vario. (2) Pengujian hipotesis kedua menunjukkan bahwa variabel psikologis adalah variabel yang berpengaruh dominan.
+Kata kunci: Kebudayaan, Sosial, Pribadi, Psikologis, Keputusan Pembelian.
+
+https://pta.trunojoyo.ac.id/welcome/detail/080211100098
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Dharma Abidin Syah
+Dosen Pembimbing I : Drs. Ec. Mudji Kuswinarno M,Si 
+Dosen Pembimbing II : Faidal SE, MM
+PENGARUH TIPE KEPEMIMPINAN TERHADAP PRESTASI KERJA PEGAWAI PADA KANTOR KECAMATAN PANGARENGAN KABUPATEN SAMPANG 
+ABSTRAK
+	Dharma Abidin Syah,Kesimpulan: (1) Terdapat pengaruh signifikan antara variabel tipe kepemimpinan (Autoritarian, Laissez-Faire, dan Demokratis), secara simultan terhadap variabel Prestasi Kerja pegawai di kantor Kecamatan Pangarengan Kabupaten Sampang. Hasil uji F anova menunjukan bahwa nilai Fhitung (6,459) &gt; Ftabel (2,92). Variabel tipe kepemimpinan (Autoritarian, Laissez-Faire, dan Demokratis), secara simultan memberikan kontribusi sebesar 42,7% terhadap Prestasi Kerja pegawai.(2) Tidak terdapat pengaruh signifikan antara variabel kepemimpinan Tipe Autoritariansecara parsial terhadap Prestasi Kerja pegawaidikantor Kecamatan Pangarengan Kabupaten Sampang. Hasil uji t menunjukan bahwa nilai t hitung (0,652) &lt; t tabel (2,045). Secara parsial variabel kepemimpinan Tipe Autoritarian memberikan kontribusi sebesar 1,61% terhadap variabel Prestasi Kerja pegawai. (3) Tidak terdapat pengaruh signifikan antara variabel kepemimpinan Tipe Laissez-Fairesecara parsial terhadap Prestasi Kerja pegawaidikantor Kecamatan Pangarengan Kabupaten Sampang.
+	Hasil uji t menunjukan bahwa nilai t hitung (1,617) &lt; t tabel (2,045). Secara parsial variabel kepemimpinan Tipe Laissez-Faire memberikan kontribusi sebesar 9,12% terhadap variabel Prestasi Kerja pegawai. (4) Terdapat pengaruh signifikan antara variabel kepemimpinan Tipe Demokratis secara parsial terhadap Prestasi Kerja pegawaidikantor Kecamatan Pangarengan Kabupaten Sampang. Hasil uji t menunjukan bahwa nilai t hitung (3,624) &gt; t tabel (2,045). Secara parsial variabel kepemimpinan Tipe Demokratis memberikan kontribusi sebesar 33,52% terhadap variabel Prestasi Kerja pegawai. (5) Variabel Tipe Demokratis mempunyai nilai koefisien determinasi lebih besar daripada variabel bebas lainya dan merupakan variabel dominan berpengaruh terhadap variabel Prestasi Kerja pegawai dikantor Kecamatan Pangarengan Kabupaten Sampang
+Kata Kunci: Tipe Kepemimpinan, Prestasi Kerja, Pegawai. 
+
+https://pta.trunojoyo.ac.id/welcome/detail/090211100079
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Toni Budianto
+Dosen Pembimbing I : Bambang Setiyo Pambudi, S.E., MM. 
+Dosen Pembimbing II : Fathor AS, S.E., MM.
+PENGARUH DIMENSI KUALITAS PELAYANAN TERHADAP KEPUASAN KONSUMEN PADA DEPOT BAROKAH PRAMBON KABUPATEN SIDOARJO
+ABSTRAK
+
+Tujuan penelitian ini adalah untuk mengidentifikasi variabel-variabel yang mempengaruhi kepuasan konsumen baik secara simultan maupun parsial. Metode yang digunakan yaitu dengan metode kuantitatif dengan populasi seluruh konsumen Depot Barokah Prambon yang menggunakan pelayanan dari Depot Barokah Prambon dengan jumlah sampel sebanyak 60 responden menggunakan teknik Accidental Sampling. Teknik analisis yang digunakan adalah analisis regresi linier berganda. Hasil penelitian menunjukkan bahwa variabel independen yang terdiri dari variabel bukti fisik (X1), kehandalan (X2), dan jaminan (X4) secara parsial berpengaruh signifikan terhadap kepuasan konsumen (Y), sedangkan variabel independen daya tanggap (X3) dan empati (X5) berpengaruh tidak signifikan terhadap variabel dependen kepuasan konsumen (Y), Serta variabel jaminan (X4) mempunyai pengaruh yang paling besar terhadap kepuasan konsumen (Y). Sedangkan secara simultan menunjukkan semua variabel independen kualitas pelayanan (X) secara simultan berpengaruh signifikan terhadap variabel dependen kepuasan konsumen (Y).
+
+Kata Kunci : Kualitas Pelayanan, Bukti Fisik, Kehandalan, Daya Tanggap, Jaminan, Empati, dan Kepuasan Konsumen.
+
+https://pta.trunojoyo.ac.id/welcome/detail/090211100089
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Iwan Kurniawan Gomes
+Dosen Pembimbing I : Drs. Ec. Makhmud Zulkifli, M.Si 
+Dosen Pembimbing II : Echsan Gani, S.E., M.SI
+ANALISIS TINGKAT RISIKO KREDIT 
+PADA PD. BPR BANK DAERAH LAMONGAN
+
+Hasil dari penelitian ini dari perhitungan Credit Risk Ratio menunjukan bahwa NPL Pada PD. BPR Bank Daerah Lamongan selama empat tahun (2008-2011) mengalami penurunan hal ini terlihat dari tingkat resiko pada tahun 2008 yang sebesar 8.893.499.978 atau sebesar 9,91%, tahun 2009 sebesar 7.501.778.630 atau sebesar 6,68%, tahun 2010 sebesar 7.986.193.006 atau sebesar 5,40% dan tahun 2011 sebesar 6.555.778.682 atau sebesar 4,88%.
+Kesimpulan penelitian ini adalah tingkat resiko pada PD. BPR Bank Daerah Lamongan dari tahun (2008-2011) mengalami penurunan tingkat resiko dan pada tahun 2011 NPL 4,88% dikatagorikan baik berdasarkan ketentuan Bank Indonesia yaitu dengan syarat NPL maksimal sebesar 5%.
+Kata kunci : Credit Risk Ratio dan Non Performing Loan.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://pta.trunojoyo.ac.id/welcome/detail/090211100013
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Sandy Ardiansyah
+Dosen Pembimbing I : Dr. Ir. Nurita Andriani, MM. 
+Dosen Pembimbing II : Suyono, S.E., M. S. M.
+Analisis Inovasi Dan Keunggulan Bersaing 
+Dalam Meningkatkan Kinerja Pemasaran
+(Studi Pada Optik Reza Lamongan)
+ABSTRAK
+	Tujuan penelitian ini adalah mendeskripsikan inovasi, keunggulan bersaing, kinerja pemasaran sebelum dan sesudah diterapkannya inovasi dan keunggulan bersaing pada Optik Reza Lamongan. Penelitian ini menggunakan deskriptif kualitatif dengan pendekatan fenomenologi. Teknik pengumpulan data yang digunakan adalah wawancara, observasi, penggunaan dokumen. Sedangkan teknik analisis data dilakukan dengan cara data reduction, data display, conclusion drawing atau verification.
+	Hasil penelitian menunjukkan bahwa dalam perusahaan Optik Reza Lamongan telah melakukan sebuah inovasi, keunggulan bersaing dalam meningkatkan kinerja pemasaran. Setelah Optik Reza Lamongan menerapkan inovasi dan keunggulan bersaing volume omzet penjualan semakin meningkat terbukti pada tahun ke tahun terus mengalami peningkatan. Produk yang ditawarkannya semakin mengalami perbaikan, sehingga pangsa pasarnya semakin meluas ke segala daerah yang ada di Jawa Timur dan Jawa Tengah.
+	
+Kata kunci : Inovasi, Keunggulan Bersaing, Kinerja Pemasaran
+
+
+https://pta.trunojoyo.ac.id/welcome/detail/090211100020
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : M. Boy Singgih Gitayuda
+Dosen Pembimbing I : Drs. Ec. Makhmud Zulkifli, M.Si 
+Dosen Pembimbing II : Prasetyo Nugroho,. S.Pi., MM
+PELAPORAN BIAYA KUALITAS UNTUK MEMINIMALKAN TERJADINYA RISIKO PRODUK CACAT DALAM MENINGKATKAN PROFITABILITAS PERUSAHAAN PADA CV. KAPUAS INTI SARANA, SURABAYA
+ABSTRAK
+
+Penelitian ini mengungkapkan beberapa rumusan masalah, diantaranya adalah bagaimanakah pelaporan biaya kualitas dapat meminimalkan terjadinya risiko produk cacat pada CV. Kapuas Inti Sarana?, dan bagaimanakah pengaruh pelaporan biaya kualitas terhadap tingkat profitabilitas pada CV. Kapuas Inti Sarana?. Penelitian ini bertujuan untuk mengetahui adanya pengaruh pelaporan biaya kualitas terhadap terjadinya risiko produk cacat dan tingkat profitabilitas perusahaan. 
+Penelitian ini menggunakan metode deskriptif, yang menggambarkan suatu fenomena dengan mendeskripsikan sejumlah variabel yang berasal dari data masa lalu dan yang terjadi pada masa sekarang. 
+Hasil dari penelitian ini adalah dengan pelaporan biaya kualitas secara periodik dan terperinci dapat berpengaruh pada peningkatan profitabilitas perusahaan, ini dapat terjadi karena pelaporan biaya kualitas secara terperinci akan mengurangi terjadinya risiko produk cacat. Apabila produk cacat berkurang maka akan berpengaruh pada peningkatan penjualan, yang secara langsung juga akan berpengaruh pada meningkatnya profitabilitas perusahaan secara keseluruhan. 
+Kata kunci: Risiko produk cacat, biaya kualitas, profitabilitas
+
+https://pta.trunojoyo.ac.id/welcome/detail/090211100064
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Fitriyah
+Dosen Pembimbing I : Dr. H. Pribanus Wantara, Drs., MM 
+Dosen Pembimbing II : Yustina Chrismardani, S.Si., MM
+Pengaruh Retailing Mix terhadap Keputusan Pembelian Konsumen pada Idola Mart Kwanyar
+Tujuan penelitian ini adalah untuk mengetahui pengaruh variabel Retailing Mix yang terdiri dari lokasi, merchandise, harga, atmosfer dalam gerai, pelayanan dan promosi terhadap keputusan pembelian konsumen dan untuk mengetahui variabel retailimg mix yang berpengaruh lebih besar terhadap keputusan pembelian konsumen pada Idola Mart Kwanyar.
+Pendekatan penelitian yang digunakan dalam penelitian ini adalah kuantitatif, yaitu penelitian yang berlandaskan pada filsafat positivisme yang bertujuan untuk menguji hipotesis yang telah ditetapkan. Sampel dalam penelitian ini adalah konsumen yang melakukan pembelian pada Idola Mart Kwanyar yang berjumlah 70 konsumen. Metode pengambilan sampel yang digunakan adalah purposive sampling. Untuk pengujian instrumen menggunakan uji Validitas, Reliabilitas dan uji Asumsi Klasik, sedangkan teknik analisis data yang digunakan untuk menguji hipotesis adalah menggunakan regresi linier berganda dengan memakai uji F dan uji t.
+Berdasarkan hasil penelitian menunjukkan bahwa nilai adjusted R Square sebesar 0,557 yang berarti besarnya pengaruh variabel bebas terhadap variabel terikat adalah 55,7%, sedangkan sisanya 44,3% dipengaruhi oleh variabel lain yang tidak diteliti dalam penelitian ini. Berdasarkan uji F variabel Retailing Mix yang terdiri dari lokasi, merchandise, harga, atmosfer dalam gerai, pelayanan dan promosi secara simultan berpengaruh signifikan terhadap keputusan pembelian Idola Mart Kwanyar. Berdasarkan uji t diketahui bahwa secara parsial variabel lokasi, merchandise, harga dan pelayanan berpengaruh signifikan terhadap variabel terikat sedangkan variabel atmosfer dalam gerai dan promosi tidak berpengaruh terhadap variabel terikat. Variabel yang berpengaruh lebih besar adalah variabel harga.
+
+Kata kunci : Retailing Mix lokasi, merchandise, harga, atmosfer dalam gerai, pelayanan, promosi dan Keputusan Pembelian
+https://pta.trunojoyo.ac.id/welcome/detail/090211100055
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Danial Aziz M.YD
+Dosen Pembimbing I : Dr. Hj. Iriani Ismail, Dra.,MM 
+Dosen Pembimbing II : Drs. Ec. Mudji Kuswinarno, M.Si
+PENGARUH PENGEMBANGAN KARIR TERHADAP SEMANGAT KERJA KARYAWAN PLN CABANG BANGKALAN
+PLN merupakan Badan Usaha Milik Negara yang bergerak dalam bidang penyediaan listrik nasional. PLN mengelola bisnisnya melalui praktek-paktek terbaik dengan mengoptimalisasikan sumbr daya manusia yang dimiliki. Salah satu caranya melalui proses pengembangan karir. Tujuan penelitian ini adalah untuk mengetahui apakah terdapat pengaruh yang signifikan antara pengembangan karir terhadap semangat kerja karyawan PLN Cabang Bangkalan secara parsial dan secara simultan .Penelitian ini bersifat penelitian populasi. Besar populasi pada penelitian ini sebesar 64 responden.Uji kuesioner yang digunakan adalah uji validitas dan uji reliabilitas. Teknik analisis data menggunakan analisis regresi linier berganda, uji t, uji F dan koefisien determinasi.
+Hasil penelitian ini menyatakan  variabel pengembangan karir yang terdiri dari prestasi kerja, pengenalan, kesetiaan orgnisasional, mentor dan sponsor serta kesempatan untuk tumbuh memiliki pengaruh yang positif terhadap semangat kerja karyawan. Dari 5 variabel diatas, prestasi kerja merupakan variabel yang memiliki pengaruh paling kuat terhadap semangat kerja karyawan PLN cabang bangkalan 
+Kata kunci :Pengembangan karir, semangat kerja,Karyawan PLN
+https://pta.trunojoyo.ac.id/welcome/detail/090211100018
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Penulis : Ahmad
+Dosen Pembimbing I : Bambang Setiyo Pambudi, S.E., MM. 
+Dosen Pembimbing II : Fathor AS, S.E., MM.
+PENGARUH PERSEPSI MANFAAT, PERSEPSI KEMUDAHAN, KEAMANAN DAN KETERSEDIAAN FITUR TERHADAP MINAT ULANG NASABAH BANK DALAM MENGGUNAKAN INTERNET BANKING (Studi pada Program Layanan Internet Banking BRI)
+Tujuan penelitian ini adalah untuk mengidentifikasi variabel-variabel yang mempengaruhi minat ulang nasabah BRI untuk menggunakan kembali layanan Internet Banking BRI baik secara parsial maupun simultan. Penelitian ini dilakukan dengan metode kuantitatif dimana populasi dalam penelitian ini adalah semua nasabah BRI di kota Bangkalan yang menggunakan layanan Internet Banking BRI dan diperoleh sampel sebanyak 50 responden yang diambil dengan teknik purposive sampling. Teknik analisis menggunakan regresi linier berganda. Hasil penelitian menunjukkan bahwa, (1) secara simultan terjadi pengaruh yang signifikan antara variabel bebas (persepsi manfaat, persepsi kemudahan, keamanan, dan ketersediaan fitur) terhadap minat ulang menggunakan internet banking, (2) secara parsial, menunjukkan bahwa semua variabel bebas berpengaruh positif dan signifikan terhadap minat ulang menggunakan layanan internet banking, kecuali pada variabel persepsi kemudahan, kecuali pada variabel persepsi kemudahan.
+Kata Kunci: Persepsi Manfaat, Persepsi Kemudahan, Keamanan, Ketersediaan Fitur, Minat Ulang Menggunakan Internet Banking.
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>https://pta.trunojoyo.ac.id/welcome/detail/090211100025
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">&lt;ipython-input-3-19ab8d59f2e7&gt;</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span>         <span class="nb">print</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span> 
+<span class="ne">---&gt; </span><span class="mi">15</span>         <span class="n">req2</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">link</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">16</span>         <span class="n">soup2</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">req2</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s1">&#39;html.parser&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">17</span> 
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/api.py</span> in <span class="ni">get</span><span class="nt">(url, params, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">71</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">72</span><span class="s2"> </span>
+<span class="ne">---&gt; </span><span class="mi">73</span><span class="s2">     return request(&quot;get&quot;, url, params=params, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">74</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">75</span><span class="s2"> </span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/api.py</span> in <span class="ni">request</span><span class="nt">(method, url, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">57</span><span class="s2">     # cases, and look like a memory leak in others.</span>
+<span class="g g-Whitespace">     </span><span class="mi">58</span><span class="s2">     with sessions.Session() as session:</span>
+<span class="ne">---&gt; </span><span class="mi">59</span><span class="s2">         return session.request(method=method, url=url, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">60</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">61</span><span class="s2"> </span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/sessions.py</span> in <span class="ni">request</span><span class="nt">(self, method, url, params, data, headers, cookies, files, auth, timeout, allow_redirects, proxies, hooks, stream, verify, cert, json)</span>
+<span class="g g-Whitespace">    </span><span class="mi">587</span><span class="s2">         }</span>
+<span class="g g-Whitespace">    </span><span class="mi">588</span><span class="s2">         send_kwargs.update(settings)</span>
+<span class="ne">--&gt; </span><span class="mi">589</span><span class="s2">         resp = self.send(prep, **send_kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">590</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">591</span><span class="s2">         return resp</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/sessions.py</span> in <span class="ni">send</span><span class="nt">(self, request, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">701</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">702</span><span class="s2">         # Send the request</span>
+<span class="ne">--&gt; </span><span class="mi">703</span><span class="s2">         r = adapter.send(request, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">704</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">705</span><span class="s2">         # Total elapsed time of the request (approximately)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/requests/adapters.py</span> in <span class="ni">send</span><span class="nt">(self, request, stream, timeout, verify, cert, proxies)</span>
+<span class="g g-Whitespace">    </span><span class="mi">484</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">485</span><span class="s2">         try:</span>
+<span class="ne">--&gt; </span><span class="mi">486</span><span class="s2">             resp = conn.urlopen(</span>
+<span class="g g-Whitespace">    </span><span class="mi">487</span><span class="s2">                 method=request.method,</span>
+<span class="g g-Whitespace">    </span><span class="mi">488</span><span class="s2">                 url=url,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">urlopen</span><span class="nt">(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)</span>
+<span class="g g-Whitespace">    </span><span class="mi">789</span><span class="s2"> </span>
+<span class="g g-Whitespace">    </span><span class="mi">790</span><span class="s2">             # Make the request on the HTTPConnection object</span>
+<span class="ne">--&gt; </span><span class="mi">791</span><span class="s2">             response = self._make_request(</span>
+<span class="g g-Whitespace">    </span><span class="mi">792</span><span class="s2">                 conn,</span>
+<span class="g g-Whitespace">    </span><span class="mi">793</span><span class="s2">                 method,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_make_request</span><span class="nt">(self, conn, method, url, body, headers, retries, timeout, chunked, response_conn, preload_content, decode_content, enforce_content_length)</span>
+<span class="g g-Whitespace">    </span><span class="mi">466</span><span class="s2">             # Trigger any extra validation we need to do.</span>
+<span class="g g-Whitespace">    </span><span class="mi">467</span><span class="s2">             try:</span>
+<span class="ne">--&gt; </span><span class="mi">468</span><span class="s2">                 self._validate_conn(conn)</span>
+<span class="g g-Whitespace">    </span><span class="mi">469</span><span class="s2">             except (SocketTimeout, BaseSSLError) as e:</span>
+<span class="g g-Whitespace">    </span><span class="mi">470</span><span class="s2">                 self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connectionpool.py</span> in <span class="ni">_validate_conn</span><span class="nt">(self, conn)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1095</span><span class="s2">         # Force connect early to allow us to validate the connection.</span>
+<span class="g g-Whitespace">   </span><span class="mi">1096</span><span class="s2">         if conn.is_closed:</span>
+<span class="ne">-&gt; </span><span class="mi">1097</span><span class="s2">             conn.connect()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1098</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">1099</span><span class="s2">         if not conn.is_verified:</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connection.py</span> in <span class="ni">connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">640</span><span class="s2">             )</span>
+<span class="g g-Whitespace">    </span><span class="mi">641</span><span class="s2"> </span>
+<span class="ne">--&gt; </span><span class="mi">642</span><span class="s2">         sock_and_verified = _ssl_wrap_socket_and_match_hostname(</span>
+<span class="g g-Whitespace">    </span><span class="mi">643</span><span class="s2">             sock=sock,</span>
+<span class="g g-Whitespace">    </span><span class="mi">644</span><span class="s2">             cert_reqs=self.cert_reqs,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/connection.py</span> in <span class="ni">_ssl_wrap_socket_and_match_hostname</span><span class="nt">(sock, cert_reqs, ssl_version, ssl_minimum_version, ssl_maximum_version, cert_file, key_file, key_password, ca_certs, ca_cert_dir, ca_cert_data, assert_hostname, assert_fingerprint, server_hostname, ssl_context, tls_in_tls)</span>
+<span class="g g-Whitespace">    </span><span class="mi">781</span><span class="s2">             server_hostname = normalized</span>
+<span class="g g-Whitespace">    </span><span class="mi">782</span><span class="s2"> </span>
+<span class="ne">--&gt; </span><span class="mi">783</span><span class="s2">     ssl_sock = ssl_wrap_socket(</span>
+<span class="g g-Whitespace">    </span><span class="mi">784</span><span class="s2">         sock=sock,</span>
+<span class="g g-Whitespace">    </span><span class="mi">785</span><span class="s2">         keyfile=key_file,</span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/util/ssl_.py</span> in <span class="ni">ssl_wrap_socket</span><span class="nt">(sock, keyfile, certfile, cert_reqs, ca_certs, server_hostname, ssl_version, ciphers, ssl_context, ca_cert_dir, key_password, ca_cert_data, tls_in_tls)</span>
+<span class="g g-Whitespace">    </span><span class="mi">469</span><span class="s2">         pass</span>
+<span class="g g-Whitespace">    </span><span class="mi">470</span><span class="s2"> </span>
+<span class="ne">--&gt; </span><span class="mi">471</span><span class="s2">     ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)</span>
+<span class="g g-Whitespace">    </span><span class="mi">472</span><span class="s2">     return ssl_sock</span>
+<span class="g g-Whitespace">    </span><span class="mi">473</span><span class="s2"> </span>
+
+<span class="nn">/usr/local/lib/python3.10/dist-packages/urllib3/util/ssl_.py</span> in <span class="ni">_ssl_wrap_socket_impl</span><span class="nt">(sock, ssl_context, tls_in_tls, server_hostname)</span>
+<span class="g g-Whitespace">    </span><span class="mi">513</span><span class="s2">         return SSLTransport(sock, ssl_context, server_hostname)</span>
+<span class="g g-Whitespace">    </span><span class="mi">514</span><span class="s2"> </span>
+<span class="ne">--&gt; </span><span class="mi">515</span><span class="s2">     return ssl_context.wrap_socket(sock, server_hostname=server_hostname)</span>
+
+<span class="nn">/usr/lib/python3.10/ssl.py</span> in <span class="ni">wrap_socket</span><span class="nt">(self, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, session)</span>
+<span class="g g-Whitespace">    </span><span class="mi">511</span><span class="s2">         # SSLSocket class handles server_hostname encoding before it calls</span>
+<span class="g g-Whitespace">    </span><span class="mi">512</span><span class="s2">         # ctx._wrap_socket()</span>
+<span class="ne">--&gt; </span><span class="mi">513</span><span class="s2">         return self.sslsocket_class._create(</span>
+<span class="g g-Whitespace">    </span><span class="mi">514</span><span class="s2">             sock=sock,</span>
+<span class="g g-Whitespace">    </span><span class="mi">515</span><span class="s2">             server_side=server_side,</span>
+
+<span class="nn">/usr/lib/python3.10/ssl.py</span> in <span class="ni">_create</span><span class="nt">(cls, sock, server_side, do_handshake_on_connect, suppress_ragged_eofs, server_hostname, context, session)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1069</span><span class="s2">                         # non-blocking</span>
+<span class="g g-Whitespace">   </span><span class="mi">1070</span><span class="s2">                         raise ValueError(&quot;do_handshake_on_connect should not be specified for non-blocking sockets&quot;)</span>
+<span class="ne">-&gt; </span><span class="mi">1071</span><span class="s2">                     self.do_handshake()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1072</span><span class="s2">             except (OSError, ValueError):</span>
+<span class="g g-Whitespace">   </span><span class="mi">1073</span><span class="s2">                 self.close()</span>
+
+<span class="nn">/usr/lib/python3.10/ssl.py</span> in <span class="ni">do_handshake</span><span class="nt">(self, block)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1340</span><span class="s2">             if timeout == 0.0 and block:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1341</span><span class="s2">                 self.settimeout(None)</span>
+<span class="ne">-&gt; </span><span class="mi">1342</span><span class="s2">             self._sslobj.do_handshake()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1343</span><span class="s2">         finally:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1344</span><span class="s2">             self.settimeout(timeout)</span>
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/Razzaaq38/ppw/main/data_crawling.csv&quot;</span><span class="p">)</span>
+<span class="n">judul</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Judul&#39;</span><span class="p">]</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-c31466bb-9d2e-4907-b231-ec8fc2fb2e79" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Judul</th>
+      <th>penulis</th>
+      <th>Dosen Pembimbing I</th>
+      <th>Dosen Pembimbing II</th>
+      <th>Abstrak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>PENGARUH FAKTOR-FAKTOR PELATIHAN DAN PENGEMBAN...</td>
+      <td>Penulis : SATIYAH</td>
+      <td>Dra. Hj. S. Anugrahini Irawati, MM</td>
+      <td>Helmi Buyung Aulia,S,ST.SE,M.MT</td>
+      <td>ABSTRAK\r\...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ANALISIS PERSEPSI BRAND ASSOCIATION MENURUT PE...</td>
+      <td>Penulis : Faishal</td>
+      <td>Nurita Andriani</td>
+      <td>Yustina Chrismardani</td>
+      <td>Tujuan penelitian ini adalah untuk mengetahui ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>PENGARUH GAYA KEPEMIMPINAN DEMOKRATIK TERHADAP...</td>
+      <td>Penulis : Wahyu Kurniawan</td>
+      <td>Dr. Dra. Hj. Iriani Ismail, MM</td>
+      <td>Dra. Hj. S. Anugrahini Irawati, MM</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pengukuran Website Quality Pada Situs Sistem A...</td>
+      <td>Penulis : Muhammad Zakaria Utomo</td>
+      <td>Dr. Ir. Nurita Andriani, MM</td>
+      <td>Nirma Kurriwati, SP, M.Si</td>
+      <td>Aplikasi nyata pemanfaatan teknologi informasi...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>PENGARUH KEPEMIMPINAN DAN KOMPENSASI TERHADAP ...</td>
+      <td>Penulis : Hendri Wahyudi Prayitno</td>
+      <td>Dra. Hj. S Anugrahini Irawati, MM</td>
+      <td>Helmi Buyung Aulia,S,ST,SE,.MT</td>
+      <td>Abstrak\r\nPenelitian ini menggunakan metode k...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1025</th>
+      <td>ANALISA PENGARUH RASIO BOPO, LDR, ROA TERHADAP...</td>
+      <td>Penulis : Novia Prihastiwi Ningtyas</td>
+      <td>Hj. Evaliati Amaniyah, S.E., M.S.M</td>
+      <td>NaN</td>
+      <td>Tujuan penelitian ini adalah untuk mengetahui ...</td>
+    </tr>
+    <tr>
+      <th>1026</th>
+      <td>Analisis Cost Volume Profit Untuk Menentukan T...</td>
+      <td>Penulis : Husnul Hotimah</td>
+      <td>Hj. Evaliati Amaniyah, S.E., M.S.M.</td>
+      <td>NaN</td>
+      <td>ABSTRAK\nPenelitian ini bertujuan untuk menget...</td>
+    </tr>
+    <tr>
+      <th>1027</th>
+      <td>Pengaruh Pelatihan Dan Kompensasi Terhadap Pro...</td>
+      <td>Penulis : Uswatun Hasanah</td>
+      <td>Dr. Raden Mas Mochammad  Wispandono S.E ., MS</td>
+      <td>NaN</td>
+      <td>ABSTRAK\nUswatun Hasanah, 160211100291, Pengar...</td>
+    </tr>
+    <tr>
+      <th>1028</th>
+      <td>PERAN SERVICE PERFORMANCE DAN CLIMATE ORGANIZA...</td>
+      <td>Penulis : ACH FATHONI</td>
+      <td>YUDHI PRASETYA MADA, S.E., M.M.</td>
+      <td>NaN</td>
+      <td>ABSTRAK\nTujuan dari penelitian ini adalah unt...</td>
+    </tr>
+    <tr>
+      <th>1029</th>
+      <td>BAURAN PROMOSI PADA DEALER YAMAHA TRETAN MOTOR...</td>
+      <td>Penulis : INTAN YULLIA NINGSIH</td>
+      <td>DR. MOHAMMAD ARIEF, S.E., M.M.</td>
+      <td>NaN</td>
+      <td>ABSTRAK\nPenelitian ini bertujuan: (1) Untuk m...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1030 rows × 5 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-c31466bb-9d2e-4907-b231-ec8fc2fb2e79')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-c31466bb-9d2e-4907-b231-ec8fc2fb2e79 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-c31466bb-9d2e-4907-b231-ec8fc2fb2e79');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-c69e19f1-6f75-433f-91cc-e15a19dd59ae">
+  <button class="colab-df-quickchart" onclick="quickchart('df-c69e19f1-6f75-433f-91cc-e15a19dd59ae')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-c69e19f1-6f75-433f-91cc-e15a19dd59ae button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">])</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">data</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="n">data_lower_case</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">]</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data_lower_case</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-bd00f43f-c542-4be7-9277-422665a8212e" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Abstrak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>abstrak\r\...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>tujuan penelitian ini adalah untuk mengetahui ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>aplikasi nyata pemanfaatan teknologi informasi...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>abstrak\r\npenelitian ini menggunakan metode k...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>abstrak\r\n\r\naththaariq, pengaruh kompetensi...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1020</th>
+      <td>tujuan penelitian ini adalah untuk mengetahui ...</td>
+    </tr>
+    <tr>
+      <th>1021</th>
+      <td>abstrak\npenelitian ini bertujuan untuk menget...</td>
+    </tr>
+    <tr>
+      <th>1022</th>
+      <td>abstrak\nuswatun hasanah, 160211100291, pengar...</td>
+    </tr>
+    <tr>
+      <th>1023</th>
+      <td>abstrak\ntujuan dari penelitian ini adalah unt...</td>
+    </tr>
+    <tr>
+      <th>1024</th>
+      <td>abstrak\npenelitian ini bertujuan: (1) untuk m...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1025 rows × 1 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bd00f43f-c542-4be7-9277-422665a8212e')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-bd00f43f-c542-4be7-9277-422665a8212e button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-bd00f43f-c542-4be7-9277-422665a8212e');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-ed6dd889-5197-4153-8ade-58df1b1331a8">
+  <button class="colab-df-quickchart" onclick="quickchart('df-ed6dd889-5197-4153-8ade-58df1b1331a8')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-ed6dd889-5197-4153-8ade-58df1b1331a8 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">clean</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="c1">#Tahap ini bertujuan untuk membersihkan teks dalam kolom &#39;Abstrak&#39;.</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">])):</span>
+    <span class="c1"># Melakukan pembersihan teks dengan menghapus karakter khusus, mention, hashtag, dan URL</span>
+    <span class="n">clean_symbols</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;[^a-zA-Zï ]+&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>  <span class="c1"># Pembersihan karakter</span>
+    <span class="n">clean_tag</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;@[A-Za-z0-9_]+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">clean_symbols</span><span class="p">)</span>  <span class="c1"># Pembersihan mention</span>
+    <span class="n">clean_hashtag</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s2">&quot;#[A-Za-z0-9_]+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">clean_tag</span><span class="p">)</span>  <span class="c1"># Pembersihan hashtag</span>
+    <span class="n">clean_https</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;http\S+&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">clean_hashtag</span><span class="p">)</span>  <span class="c1"># Pembersihan URL link</span>
+    <span class="n">clean_whitespace</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">clean_https</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>  <span class="c1"># Mengganti spasi berlebih dengan spasi tunggal</span>
+    <span class="n">clean</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">clean_whitespace</span><span class="p">)</span>
+
+    <span class="c1"># spasi berlebih diganti dengan spasi tunggal.</span>
+<span class="n">clean_result</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">clean</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Cleansing Abstrak&#39;</span><span class="p">])</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">clean_result</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-d032c86a-8a52-4c8c-9864-199427eade3a" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Cleansing Abstrak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>abstrak satiyah pengaruh faktor faktor pelatih...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>tujuan penelitian ini adalah untuk mengetahui ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>aplikasi nyata pemanfaatan teknologi informasi...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>abstrak penelitian ini menggunakan metode kuan...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>abstrak aththaariq pengaruh kompetensi dosen t...</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1020</th>
+      <td>tujuan penelitian ini adalah untuk mengetahui ...</td>
+    </tr>
+    <tr>
+      <th>1021</th>
+      <td>abstrak penelitian ini bertujuan untuk mengeta...</td>
+    </tr>
+    <tr>
+      <th>1022</th>
+      <td>abstrak uswatun hasanah pengaruh pelatihan dan...</td>
+    </tr>
+    <tr>
+      <th>1023</th>
+      <td>abstrak tujuan dari penelitian ini adalah untu...</td>
+    </tr>
+    <tr>
+      <th>1024</th>
+      <td>abstrak penelitian ini bertujuan untuk mengeta...</td>
+    </tr>
+  </tbody>
+</table>
+<p>1025 rows × 1 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d032c86a-8a52-4c8c-9864-199427eade3a')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-d032c86a-8a52-4c8c-9864-199427eade3a button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-d032c86a-8a52-4c8c-9864-199427eade3a');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-8b39730d-a48a-4dcc-9813-8daf8cccc046">
+  <button class="colab-df-quickchart" onclick="quickchart('df-8b39730d-a48a-4dcc-9813-8daf8cccc046')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-8b39730d-a48a-4dcc-9813-8daf8cccc046 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">slang_dict</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/noneneedme/ppw/main/combined_slang_words.txt&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># Membuat fungsi untuk mengubah slang words menjadi kata Indonesia yang benar</span>
+<span class="k">def</span> <span class="nf">replace_slang_words</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">nltk</span><span class="o">.</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+    <span class="n">words_filtered</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">)]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words_filtered</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">words_filtered</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="ow">in</span> <span class="n">slang_dict</span><span class="p">:</span>
+            <span class="n">words_filtered</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">slang_dict</span><span class="p">[</span><span class="n">words_filtered</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+    <span class="k">return</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">words_filtered</span><span class="p">)</span>
+
+<span class="n">slang_words</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">clean</span><span class="p">)):</span>
+    <span class="n">slang</span> <span class="o">=</span> <span class="n">replace_slang_words</span><span class="p">(</span><span class="n">clean</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">slang_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">slang</span><span class="p">)</span>
+
+<span class="n">data_slang</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">slang_words</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Slang Word Corection&quot;</span><span class="p">])</span>
+<span class="c1">##########</span>
+<span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data_slang</span><span class="p">)):</span>
+    <span class="n">tokens</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">slang_words</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">listStopword</span> <span class="o">=</span>  <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">))</span>
+
+    <span class="n">removed</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">t</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">listStopword</span><span class="p">:</span>
+          <span class="n">removed</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+
+    <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">removed</span><span class="p">)</span>
+<span class="c1">###########</span>
+<span class="n">gabung</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">)):</span>
+    <span class="n">joinkata</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+    <span class="n">gabung</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">joinkata</span><span class="p">)</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">gabung</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Join_Kata&#39;</span><span class="p">])</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Join_Kata&#39;</span><span class="p">])</span>
+<span class="n">df</span><span class="o">=</span><span class="n">result</span>
+
+<span class="c1"># Extract the &#39;Join_Kata&#39; column</span>
+<span class="n">gabung</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Join_Kata&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+
+<span class="c1"># TfidfVectorizer</span>
+<span class="n">tfidfvectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">analyzer</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">,</span> <span class="n">stop_words</span><span class="o">=</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
+<span class="n">tfidf_wm</span> <span class="o">=</span> <span class="n">tfidfvectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">gabung</span><span class="p">)</span>
+<span class="n">tfidf_tokens</span> <span class="o">=</span> <span class="n">tfidfvectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
+<span class="n">df_tfidfvect</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">tfidf_wm</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">tfidf_tokens</span><span class="p">)</span>
+
+<span class="c1"># CountVectorizer</span>
+<span class="n">countvectorizer</span> <span class="o">=</span> <span class="n">CountVectorizer</span><span class="p">(</span><span class="n">analyzer</span><span class="o">=</span><span class="s1">&#39;word&#39;</span><span class="p">,</span> <span class="n">stop_words</span><span class="o">=</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
+<span class="n">count_wm</span> <span class="o">=</span> <span class="n">countvectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">gabung</span><span class="p">)</span>
+<span class="n">count_tokens</span> <span class="o">=</span> <span class="n">countvectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
+<span class="n">df_countvect</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">count_wm</span><span class="o">.</span><span class="n">toarray</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="n">count_tokens</span><span class="p">)</span>
+
+<span class="c1">#digunakan TfidfVectorizer dan CountVectorizer untuk menghitung TF-IDF dan frekuensi kata-kata.</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df_countvect</span><span class="p">)</span>
+<span class="c1"># Hasilnya, bobot kata-kata pada dokumen disimpan dalam DataFrame df_countvect.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-cceed20a-209a-40be-b190-b27d93438e6b" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>aaa</th>
+      <th>aaaamanahsyariah</th>
+      <th>aar</th>
+      <th>abadi</th>
+      <th>abalisis</th>
+      <th>abc</th>
+      <th>abcs</th>
+      <th>abd</th>
+      <th>abdul</th>
+      <th>abdullah</th>
+      <th>...</th>
+      <th>zscore</th>
+      <th>zte</th>
+      <th>zuhri</th>
+      <th>zuhruf</th>
+      <th>zulfi</th>
+      <th>zulia</th>
+      <th>zuliana</th>
+      <th>zulkifli</th>
+      <th>zulpah</th>
+      <th>zyn</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1020</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1021</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1022</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1023</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1024</th>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>1025 rows × 6973 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-cceed20a-209a-40be-b190-b27d93438e6b')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-cceed20a-209a-40be-b190-b27d93438e6b button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-cceed20a-209a-40be-b190-b27d93438e6b');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-c6cb2eae-d4b0-482c-ad7a-05f91b61dede">
+  <button class="colab-df-quickchart" onclick="quickchart('df-c6cb2eae-d4b0-482c-ad7a-05f91b61dede')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-c6cb2eae-d4b0-482c-ad7a-05f91b61dede button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lda</span> <span class="o">=</span> <span class="n">LatentDirichletAllocation</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">doc_topic_prior</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">topic_word_prior</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">lda_top</span><span class="o">=</span><span class="n">lda</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_countvect</span><span class="p">)</span>
+<span class="c1"># Penerapan model LDA pada data yang telah diproses sebelumnya</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">lda_top</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-3d1f398f-bc5c-4a0b-a91f-ae4c7977b958" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+      <th>1</th>
+      <th>2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.000995</td>
+      <td>0.212270</td>
+      <td>0.786735</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.996256</td>
+      <td>0.001864</td>
+      <td>0.001880</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.222691</td>
+      <td>0.775934</td>
+      <td>0.001375</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.221141</td>
+      <td>0.509590</td>
+      <td>0.269269</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.534508</td>
+      <td>0.463925</td>
+      <td>0.001567</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1020</th>
+      <td>0.002598</td>
+      <td>0.002622</td>
+      <td>0.994781</td>
+    </tr>
+    <tr>
+      <th>1021</th>
+      <td>0.002612</td>
+      <td>0.845562</td>
+      <td>0.151826</td>
+    </tr>
+    <tr>
+      <th>1022</th>
+      <td>0.001306</td>
+      <td>0.521793</td>
+      <td>0.476901</td>
+    </tr>
+    <tr>
+      <th>1023</th>
+      <td>0.001443</td>
+      <td>0.001434</td>
+      <td>0.997123</td>
+    </tr>
+    <tr>
+      <th>1024</th>
+      <td>0.995506</td>
+      <td>0.002246</td>
+      <td>0.002248</td>
+    </tr>
+  </tbody>
+</table>
+<p>1025 rows × 3 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-3d1f398f-bc5c-4a0b-a91f-ae4c7977b958')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-3d1f398f-bc5c-4a0b-a91f-ae4c7977b958 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-3d1f398f-bc5c-4a0b-a91f-ae4c7977b958');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-0d4ef440-1cb6-4983-aada-b2d142f0dafb">
+  <button class="colab-df-quickchart" onclick="quickchart('df-0d4ef440-1cb6-4983-aada-b2d142f0dafb')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-0d4ef440-1cb6-4983-aada-b2d142f0dafb button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Menggabungkan judul tesis dengan bobot topik dari LDA</span>
+<span class="n">topics</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">lda_top</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Topik 1&#39;</span><span class="p">,</span><span class="s1">&#39;Topik 2&#39;</span><span class="p">,</span><span class="s1">&#39;Topik 3&#39;</span><span class="p">])</span>
+<span class="n">gabung</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">judul</span><span class="p">,</span> <span class="n">topics</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">gabung</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-5834efdc-643e-49b3-b668-d58dc0038d77" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Judul</th>
+      <th>Topik 1</th>
+      <th>Topik 2</th>
+      <th>Topik 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>PENGARUH FAKTOR-FAKTOR PELATIHAN DAN PENGEMBAN...</td>
+      <td>0.000995</td>
+      <td>0.212270</td>
+      <td>0.786735</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ANALISIS PERSEPSI BRAND ASSOCIATION MENURUT PE...</td>
+      <td>0.996256</td>
+      <td>0.001864</td>
+      <td>0.001880</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>PENGARUH GAYA KEPEMIMPINAN DEMOKRATIK TERHADAP...</td>
+      <td>0.222691</td>
+      <td>0.775934</td>
+      <td>0.001375</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pengukuran Website Quality Pada Situs Sistem A...</td>
+      <td>0.221141</td>
+      <td>0.509590</td>
+      <td>0.269269</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>PENGARUH KEPEMIMPINAN DAN KOMPENSASI TERHADAP ...</td>
+      <td>0.534508</td>
+      <td>0.463925</td>
+      <td>0.001567</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1025</th>
+      <td>ANALISA PENGARUH RASIO BOPO, LDR, ROA TERHADAP...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1026</th>
+      <td>Analisis Cost Volume Profit Untuk Menentukan T...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1027</th>
+      <td>Pengaruh Pelatihan Dan Kompensasi Terhadap Pro...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1028</th>
+      <td>PERAN SERVICE PERFORMANCE DAN CLIMATE ORGANIZA...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1029</th>
+      <td>BAURAN PROMOSI PADA DEALER YAMAHA TRETAN MOTOR...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>1030 rows × 4 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5834efdc-643e-49b3-b668-d58dc0038d77')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-5834efdc-643e-49b3-b668-d58dc0038d77 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-5834efdc-643e-49b3-b668-d58dc0038d77');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-66355f8b-d738-410e-9819-ee61e83597c5">
+  <button class="colab-df-quickchart" onclick="quickchart('df-66355f8b-d738-410e-9819-ee61e83597c5')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-66355f8b-d738-410e-9819-ee61e83597c5 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">label</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,(</span><span class="n">lda</span><span class="o">.</span><span class="n">components_</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)):</span>
+    <span class="n">masukan</span> <span class="o">=</span> <span class="n">df_countvect</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">label</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">masukan</span><span class="p">)</span>
+<span class="n">VT_tabel</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">lda</span><span class="o">.</span><span class="n">components_</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
+<span class="n">mungkin</span><span class="o">=</span><span class="n">VT_tabel</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span><span class="s2">&quot;Topik 1&quot;</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span><span class="s2">&quot;Topik 2&quot;</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="s2">&quot;Topik 3&quot;</span><span class="p">})</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="c1">#Menghitung bobot kata-kata terhadap setiap topik yang dihasilkan oleh model LDA</span>
+
+<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">mungkin</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="df-a513c8d4-511e-464a-bc85-a2faf24713a9" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Topik 1</th>
+      <th>Topik 2</th>
+      <th>Topik 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>aaa</th>
+      <td>0.712731</td>
+      <td>0.487206</td>
+      <td>0.100063</td>
+    </tr>
+    <tr>
+      <th>aaaamanahsyariah</th>
+      <td>0.670141</td>
+      <td>0.529806</td>
+      <td>0.100053</td>
+    </tr>
+    <tr>
+      <th>aar</th>
+      <td>1.291841</td>
+      <td>0.100088</td>
+      <td>0.908071</td>
+    </tr>
+    <tr>
+      <th>abadi</th>
+      <td>3.776907</td>
+      <td>20.577017</td>
+      <td>1.946075</td>
+    </tr>
+    <tr>
+      <th>abalisis</th>
+      <td>0.230996</td>
+      <td>0.300691</td>
+      <td>0.768314</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>zulia</th>
+      <td>0.679163</td>
+      <td>0.520800</td>
+      <td>0.100037</td>
+    </tr>
+    <tr>
+      <th>zuliana</th>
+      <td>1.080271</td>
+      <td>0.134517</td>
+      <td>1.085212</td>
+    </tr>
+    <tr>
+      <th>zulkifli</th>
+      <td>8.495289</td>
+      <td>21.023568</td>
+      <td>26.781142</td>
+    </tr>
+    <tr>
+      <th>zulpah</th>
+      <td>3.099660</td>
+      <td>0.100182</td>
+      <td>0.100159</td>
+    </tr>
+    <tr>
+      <th>zyn</th>
+      <td>0.367057</td>
+      <td>0.832903</td>
+      <td>0.100040</td>
+    </tr>
+  </tbody>
+</table>
+<p>6973 rows × 3 columns</p>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-a513c8d4-511e-464a-bc85-a2faf24713a9')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-a513c8d4-511e-464a-bc85-a2faf24713a9 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-a513c8d4-511e-464a-bc85-a2faf24713a9');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-23affbc5-ba15-478c-9c4a-69ec42425c84">
+  <button class="colab-df-quickchart" onclick="quickchart('df-23affbc5-ba15-478c-9c4a-69ec42425c84')"
+            title="Suggest charts"
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-23affbc5-ba15-478c-9c4a-69ec42425c84 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+</div></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="markdown-notebooks.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="190411100088_Muhammad_Razzaaq_Tugas_Graph_Rank_Kalimat_PPW.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Membuat Graph &amp; Rank Kalimat</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Muhammad Razzaaq
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=365ca57ee442770a23c6"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=365ca57ee442770a23c6"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
