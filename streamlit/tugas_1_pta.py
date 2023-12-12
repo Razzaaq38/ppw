@@ -75,8 +75,8 @@ def dat(link):
 ##############################################################################################################################################
 def run():
     st.title("Tugas 1 PTA")
-    tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13 = st.tabs(
-        ["Crawling", "Data", "Preproses", "Stopword", "Penggabungan", "Klastering",
+    tab1, tab2, tab3, tab4, tab5, tab6, tab8, tab9, tab10, tab11, tab12, tab13 = st.tabs(
+        ["Crawling", "Data", "Preproses", "Stopword", "Penggabungan",
          "LDA", "Judul", "Tabel LDA", "K-Means", "Label", "Klastering", "Filtrasi"])
 
     with tab1:
@@ -178,30 +178,6 @@ def run():
 
         result = pd.DataFrame(gabung, columns=['Join_Kata'])
         st.write(result)
-
-    with tab7:
-        st.title('Klastering')
-        # Jumlah cluster yang diinginkan
-        num_clusters = 2
-
-        # Menginisialisasi model K-Means
-        kmeans = KMeans(n_clusters=num_clusters, random_state=0)
-
-        # Melakukan clustering pada data TF-IDF
-        clusters = kmeans.fit_predict(tfidf_wm)
-
-        # Menambahkan kolom cluster ke DataFrame
-        df_countvect['Cluster'] = clusters
-
-        # Tampilkan hasil
-        df_countvect[['Judul', 'Cluster']]
-
-        # Hapus kolom 'Judul' dari DataFrame df_countvect
-        df_countvect = df_countvect.drop(columns=['Judul'])
-
-        # Tampilkan DataFrame tanpa kolom 'Judul'
-        st.write("Count Vectorizer\n")
-        st.write(df_countvect)
 
     with tab8:
         st.title('LDA')
